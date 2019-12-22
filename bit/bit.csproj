@@ -7,7 +7,7 @@
     <ProjectGuid>{8AE321EC-A9D1-47EB-9C8A-10ECE38F7F88}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>bit</RootNamespace>
-    <AssemblyName>jejuairfarm</AssemblyName>
+    <AssemblyName>hyunjaeyoung3414</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -100,7 +100,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="bit_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

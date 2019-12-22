@@ -19,15 +19,9 @@ namespace bit
     public partial class Form1 : Form
     {
 
-        // jejuairfarm
-        private static string bitmexKey = "I1mAR6Kn0HxzW6uRZS4pSFwq";
-        private static string bitmexSecret = "Fmv_Kvyq663upBdsyOwvlt7Mmo1KlvbH7sG5HlV2s9Gv8AMk";
-        //////hyunju3414764
-        //private static string bitmexKey = "G58vcGUdSYs4Kc1CdaImJHrq";
-        //private static string bitmexSecret = "lT25GUXQnn2_30i1mFsyNajQgQ7023p4XZO692YOpu2MDlMY";
         ////hyunjaeyoung3414
-        //private static string bitmexKey = "MV60V1JtCsCZPRjQfh5uey8e";
-        //private static string bitmexSecret = "meK3UuvpYKejEeluX73SgBvjqwK67tk6qLoVg3GMPRLE678i";
+        private static string bitmexKey = "MV60V1JtCsCZPRjQfh5uey8e";
+        private static string bitmexSecret = "meK3UuvpYKejEeluX73SgBvjqwK67tk6qLoVg3GMPRLE678i";
 
         // [2]
         BitMEXApi bitemex = new BitMEXApi(bitmexKey, bitmexSecret);

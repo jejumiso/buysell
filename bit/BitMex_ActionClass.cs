@@ -50,127 +50,15 @@ namespace bit.BitMex_ActionClass
             int step8_Qty; double step8_spring; double _margin8;
             int step9_Qty; double step9_spring; double _margin9;
 
-            if (true)//limit_trad_price < 1000
-            {
-                step1_Qty = 2500; step1_spring = 5.0; _margin1 = 15.0;       
-                step2_Qty = 3500; step2_spring = 8.0; _margin2 = 15.0;       
-                step3_Qty = 3500; step3_spring = 15.0; _margin3 = 23.0;      
-                step4_Qty = 3500; step4_spring = 30.0; _margin4 = 40.0;
-                step5_Qty = 5500; step5_spring = 55.0; _margin5 = 60.0;
-                step6_Qty = 400; step6_spring = 80.0; _margin6 = 100.0;
-                step7_Qty = 50; step7_spring = 140.0; _margin7 = 160.0;
-                step8_Qty = 50; step8_spring = 180.0; _margin8 = 210.0;
-                step9_Qty = 50; step9_spring = 250.0; _margin9 = 250.0;
-            }
-            //else if (limit_trad_price < 2000)
-            //{
-            //    step1_Qty = 110; step1_spring = 5.0; _margin1 = 15.0;     
-            //    step2_Qty = 110; step2_spring = 8.0; _margin2 = 15.0;     
-            //    step3_Qty = 110; step3_spring = 15.0; _margin3 = 23.0;    
-            //    step4_Qty = 220; step4_spring = 30.0; _margin4 = 40.0;
-            //    step5_Qty = 220; step5_spring = 55.0; _margin5 = 60.0;
-            //    step6_Qty = 220; step6_spring = 80.0; _margin6 = 100.0;
-            //    step7_Qty = 220; step7_spring = 140.0; _margin7 = 160.0;
-            //    step8_Qty = 220; step8_spring = 180.0; _margin8 = 210.0;
-            //    step9_Qty = 220; step9_spring = 250.0; _margin9 = 250.0;
-            //}
-            //else if (limit_trad_price < 4000)
-            //{
-            //    step1_Qty = 120; step1_spring = 5.0; _margin1 = 15.0;   
-            //    step2_Qty = 120; step2_spring = 8.0; _margin2 = 15.0;   
-            //    step3_Qty = 120; step3_spring = 15.0; _margin3 = 23.0;  
-            //    step4_Qty = 240; step4_spring = 30.0; _margin4 = 40.0;
-            //    step5_Qty = 240; step5_spring = 55.0; _margin5 = 60.0;
-            //    step6_Qty = 240; step6_spring = 80.0; _margin6 = 100.0;
-            //    step7_Qty = 240; step7_spring = 140.0; _margin7 = 160.0;
-            //    step8_Qty = 240; step8_spring = 180.0; _margin8 = 210.0;
-            //    step9_Qty = 240; step9_spring = 250.0; _margin9 = 250.0;
-            //}
-            //else if (limit_trad_price < 8000)
-            //{
-            //    step1_Qty = 150; step1_spring = 5.0; _margin1 = 15.0;    
-            //    step2_Qty = 150; step2_spring = 8.0; _margin2 = 15.0;    
-            //    step3_Qty = 150; step3_spring = 15.0; _margin3 = 23.0;   
-            //    step4_Qty = 300; step4_spring = 30.0; _margin4 = 40.0;
-            //    step5_Qty = 300; step5_spring = 55.0; _margin5 = 60.0;
-            //    step6_Qty = 300; step6_spring = 80.0; _margin6 = 100.0;
-            //    step7_Qty = 300; step7_spring = 140.0; _margin7 = 160.0;
-            //    step8_Qty = 300; step8_spring = 180.0; _margin8 = 210.0;
-            //    step9_Qty = 300; step9_spring = 250.0; _margin9 = 250.0;
-            //}
-            //else if (limit_trad_price < 16000)       
-            //{
-            //    step1_Qty = 220; step1_spring = 5.0; _margin1 = 15.0;   
-            //    step2_Qty = 220; step2_spring = 8.0; _margin2 = 15.0;   
-            //    step3_Qty = 220; step3_spring = 15.0; _margin3 = 23.0;  
-            //    step4_Qty = 440; step4_spring = 30.0; _margin4 = 40.0;
-            //    step5_Qty = 440; step5_spring = 55.0; _margin5 = 60.0;
-            //    step6_Qty = 440; step6_spring = 80.0; _margin6 = 100.0;
-            //    step7_Qty = 440; step7_spring = 140.0; _margin7 = 160.0;
-            //    step8_Qty = 440; step8_spring = 180.0; _margin8 = 210.0;
-            //    step9_Qty = 440; step9_spring = 250.0; _margin9 = 250.0;
-            //}
-            //else if (limit_trad_price < 32000)     // 이정도 안정권에서는 운영해야할듯함...
-            //{
-            //    step1_Qty = 230; step1_spring = 5.0; _margin1 = 15.0;   
-            //    step2_Qty = 230; step2_spring = 8.0; _margin2 = 15.0;   
-            //    step3_Qty = 230; step3_spring = 15.0; _margin3 = 23.0;  
-            //    step4_Qty = 460; step4_spring = 30.0; _margin4 = 40.0;
-            //    step5_Qty = 460; step5_spring = 55.0; _margin5 = 60.0;
-            //    step6_Qty = 460; step6_spring = 80.0; _margin6 = 100.0;
-            //    step7_Qty = 460; step7_spring = 140.0; _margin7 = 160.0;
-            //    step8_Qty = 460; step8_spring = 180.0; _margin8 = 210.0;
-            //    step9_Qty = 460; step9_spring = 250.0; _margin9 = 250.0;
-            //}
-            //else if (limit_trad_price < 64000)
-            //{
-            //    step1_Qty = 600; step1_spring = 5.0; _margin1 = 15.0;   
-            //    step2_Qty = 600; step2_spring = 8.0; _margin2 = 15.0;   
-            //    step3_Qty = 600; step3_spring = 15.0; _margin3 = 23.0;  
-            //    step4_Qty = 1200; step4_spring = 30.0; _margin4 = 40.0;
-            //    step5_Qty = 1200; step5_spring = 55.0; _margin5 = 60.0;
-            //    step6_Qty = 1200; step6_spring = 80.0; _margin6 = 100.0;
-            //    step7_Qty = 1200; step7_spring = 140.0; _margin7 = 160.0;
-            //    step8_Qty = 1200; step8_spring = 180.0; _margin8 = 210.0;
-            //    step9_Qty = 1200; step9_spring = 250.0; _margin9 = 250.0;
-            //}
-            //else if (limit_trad_price < 128000)
-            //{
-            //    step1_Qty = 800; step1_spring = 5.0; _margin1 = 15.0;   
-            //    step2_Qty = 800; step2_spring = 8.0; _margin2 = 15.0;   
-            //    step3_Qty = 800; step3_spring = 15.0; _margin3 = 23.0;  
-            //    step4_Qty = 1600; step4_spring = 30.0; _margin4 = 40.0;
-            //    step5_Qty = 1600; step5_spring = 55.0; _margin5 = 60.0;
-            //    step6_Qty = 1600; step6_spring = 80.0; _margin6 = 100.0;
-            //    step7_Qty = 1600; step7_spring = 140.0; _margin7 = 160.0;
-            //    step8_Qty = 1600; step8_spring = 180.0; _margin8 = 210.0;
-            //    step9_Qty = 1600; step9_spring = 250.0; _margin9 = 250.0;
-            //}
-            //else if (limit_trad_price < 256000)
-            //{
-            //    step1_Qty = 1500; step1_spring = 5.0; _margin1 = 15.0;   
-            //    step2_Qty = 1500; step2_spring = 8.0; _margin2 = 15.0;   
-            //    step3_Qty = 1500; step3_spring = 15.0; _margin3 = 23.0;  
-            //    step4_Qty = 3000; step4_spring = 30.0; _margin4 = 40.0;
-            //    step5_Qty = 3000; step5_spring = 55.0; _margin5 = 60.0;
-            //    step6_Qty = 3000; step6_spring = 80.0; _margin6 = 100.0;
-            //    step7_Qty = 3000; step7_spring = 140.0; _margin7 = 160.0;
-            //    step8_Qty = 3000; step8_spring = 180.0; _margin8 = 210.0;
-            //    step9_Qty = 3000; step9_spring = 250.0; _margin9 = 250.0;
-            //}
-            //else
-            //{
-            //    //limit_trad_price < 512000
-            //    step1_Qty = 3000; step1_spring = 5.0; _margin1 = 15.0;   
-            //    step2_Qty = 3000; step2_spring = 8.0; _margin2 = 15.0;   
-            //    step3_Qty = 3000; step3_spring = 15.0; _margin3 = 23.0;  
-            //    step4_Qty = 6000; step4_spring = 30.0; _margin4 = 40.0;
-            //    step5_Qty = 6000; step5_spring = 55.0; _margin5 = 60.0;
-            //    step6_Qty = 6000; step6_spring = 80.0; _margin6 = 100.0;
-            //    step7_Qty = 6000; step7_spring = 140.0; _margin7 = 160.0;
-            //    step8_Qty = 6000; step8_spring = 180.0; _margin8 = 210.0;
-            //    step9_Qty = 6000; step9_spring = 250.0; _margin9 = 250.0;
-            //} 
+            step1_Qty = 100; step1_spring = 5.0; _margin1 = 15.0;
+            step2_Qty = 100; step2_spring = 8.0; _margin2 = 15.0;
+            step3_Qty = 100; step3_spring = 15.0; _margin3 = 23.0;
+            step4_Qty = 100; step4_spring = 30.0; _margin4 = 40.0;
+            step5_Qty = 100; step5_spring = 55.0; _margin5 = 60.0;
+            step6_Qty = 100; step6_spring = 80.0; _margin6 = 100.0;
+            step7_Qty = 100; step7_spring = 140.0; _margin7 = 160.0;
+            step8_Qty = 100; step8_spring = 180.0; _margin8 = 210.0;
+            step9_Qty = 100; step9_spring = 250.0; _margin9 = 250.0;
             #endregion
 
             //[1-2] setting

@@ -50,15 +50,16 @@ namespace bit.BitMex_ActionClass
             int step8_Qty; double step8_spring; double _margin8;
             int step9_Qty; double step9_spring; double _margin9;
 
-            step1_Qty = 100; step1_spring = 5.0; _margin1 = 15.0;
-            step2_Qty = 100; step2_spring = 8.0; _margin2 = 15.0;
-            step3_Qty = 100; step3_spring = 15.0; _margin3 = 23.0;
-            step4_Qty = 100; step4_spring = 30.0; _margin4 = 40.0;
-            step5_Qty = 100; step5_spring = 55.0; _margin5 = 60.0;
-            step6_Qty = 100; step6_spring = 80.0; _margin6 = 100.0;
-            step7_Qty = 100; step7_spring = 140.0; _margin7 = 160.0;
-            step8_Qty = 100; step8_spring = 180.0; _margin8 = 210.0;
-            step9_Qty = 100; step9_spring = 250.0; _margin9 = 250.0;
+            //3배한거
+            step1_Qty = 2500; step1_spring = 5.0; _margin1 = 15.0;
+            step2_Qty = 2500; step2_spring = 8.0; _margin2 = 15.0;
+            step3_Qty = 2500; step3_spring = 15.0; _margin3 = 23.0;
+            step4_Qty = 2000; step4_spring = 30.0; _margin4 = 40.0;
+            step5_Qty = 2000; step5_spring = 55.0; _margin5 = 60.0;
+            step6_Qty = 2000; step6_spring = 80.0; _margin6 = 100.0;
+            step7_Qty = 200; step7_spring = 140.0; _margin7 = 160.0;
+            step8_Qty = 200; step8_spring = 180.0; _margin8 = 210.0;
+            step9_Qty = 200; step9_spring = 250.0; _margin9 = 250.0;
             #endregion
 
             //[1-2] setting

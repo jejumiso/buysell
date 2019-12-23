@@ -19,15 +19,9 @@ namespace bit
     public partial class Form1 : Form
     {
 
-        // jejuairfarm
-        private static string bitmexKey = "I1mAR6Kn0HxzW6uRZS4pSFwq";
-        private static string bitmexSecret = "Fmv_Kvyq663upBdsyOwvlt7Mmo1KlvbH7sG5HlV2s9Gv8AMk";
-        //////hyunju3414764
-        //private static string bitmexKey = "G58vcGUdSYs4Kc1CdaImJHrq";
-        //private static string bitmexSecret = "lT25GUXQnn2_30i1mFsyNajQgQ7023p4XZO692YOpu2MDlMY";
-        ////hyunjaeyoung3414
-        //private static string bitmexKey = "MV60V1JtCsCZPRjQfh5uey8e";
-        //private static string bitmexSecret = "meK3UuvpYKejEeluX73SgBvjqwK67tk6qLoVg3GMPRLE678i";
+        // so-namu2
+        private static string bitmexKey = "pPMy34kWqvjII-ZiCgv_U8HD";
+        private static string bitmexSecret = "fBjaqucf86uIGL1JfRvw75M3YHNuETWS0RFA2SAf9dqoD6D1";
 
         // [2]
         BitMEXApi bitemex = new BitMEXApi(bitmexKey, bitmexSecret);
@@ -40,8 +34,6 @@ namespace bit
 
         // [3]
         Timer timer1 = new Timer();
-        Timer timer2 = new Timer();
-        
 
         // [4] 
         Boolean ishide = false;
@@ -121,12 +113,6 @@ namespace bit
             timer1.Enabled = true;
             timer1.Interval = timeloop * 1000;
             timer1.Tick += Timer1_Tick;
-
-            // timer1의 속성 정의 – 코드에서 Timer 생성
-            // 부하 안주기 위해서 테스트에서만 진행.
-            //timer2.Enabled = true;
-            //timer2.Interval = 1 * 1000;
-            //timer2.Tick += Timer2_Tick;
         }
 
         private void bitmex_Get_bucketed_2()

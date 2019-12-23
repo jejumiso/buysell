@@ -180,7 +180,7 @@ namespace bit.BitMex_ActionClass
             double price = 0.0;
             #region step1
             price = bitemex_Bucketeds[0].close <= iniinitial_value - step1_spring ? bitemex_Bucketeds[0].close - 1.5 : iniinitial_value - step1_spring;
-            if (bitemex_position.currentQty <= 0 || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price && bitemex_position.avgCostPrice > price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty > 0 && bitemex_position.avgCostPrice > price) || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -192,7 +192,7 @@ namespace bit.BitMex_ActionClass
                 list_bitmex_order.Add(_bitmex_order);
             }
             price = bitemex_Bucketeds[0].close >= iniinitial_value + step1_spring ? bitemex_Bucketeds[0].close + 1.5 : iniinitial_value + step1_spring;
-            if (bitemex_position.currentQty >= 0 || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price && bitemex_position.avgCostPrice < price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty < 0 && bitemex_position.avgCostPrice < price) || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -206,7 +206,7 @@ namespace bit.BitMex_ActionClass
             #endregion
             #region step2
             price = bitemex_Bucketeds[0].close <= iniinitial_value - step2_spring ? bitemex_Bucketeds[0].close - 1.5 : iniinitial_value - step2_spring;
-            if (bitemex_position.currentQty <= 0 || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price && bitemex_position.avgCostPrice > price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty > 0 && bitemex_position.avgCostPrice > price) || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -219,7 +219,7 @@ namespace bit.BitMex_ActionClass
                 list_bitmex_order.Add(_bitmex_order);
             }
             price = bitemex_Bucketeds[0].close >= iniinitial_value + step2_spring ? bitemex_Bucketeds[0].close + 1.5 : iniinitial_value + step2_spring;
-            if (bitemex_position.currentQty >= 0 || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price && bitemex_position.avgCostPrice < price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty < 0 && bitemex_position.avgCostPrice < price) || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -234,7 +234,7 @@ namespace bit.BitMex_ActionClass
             #endregion
             #region step3
             price = bitemex_Bucketeds[0].close <= iniinitial_value - step3_spring ? bitemex_Bucketeds[0].close - 1.5 : iniinitial_value - step3_spring;
-            if (bitemex_position.currentQty <= 0 || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price && bitemex_position.avgCostPrice > price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty > 0 && bitemex_position.avgCostPrice > price) || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -247,7 +247,7 @@ namespace bit.BitMex_ActionClass
                 list_bitmex_order.Add(_bitmex_order);
             }
             price = bitemex_Bucketeds[0].close >= iniinitial_value + step3_spring ? bitemex_Bucketeds[0].close + 1.5 : iniinitial_value + step3_spring;
-            if (bitemex_position.currentQty >= 0 || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price && bitemex_position.avgCostPrice < price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty < 0 && bitemex_position.avgCostPrice < price) || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -262,7 +262,7 @@ namespace bit.BitMex_ActionClass
             #endregion
             #region step4
             price = bitemex_Bucketeds[0].close <= iniinitial_value - step4_spring ? bitemex_Bucketeds[0].close - 1.5 : iniinitial_value - step4_spring;
-            if (bitemex_position.currentQty <= 0 || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price && bitemex_position.avgCostPrice > price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty > 0 && bitemex_position.avgCostPrice > price) || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -275,7 +275,7 @@ namespace bit.BitMex_ActionClass
                 list_bitmex_order.Add(_bitmex_order);
             }
             price = bitemex_Bucketeds[0].close >= iniinitial_value + step4_spring ? bitemex_Bucketeds[0].close + 1.5 : iniinitial_value + step4_spring;
-            if (bitemex_position.currentQty >= 0 || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price && bitemex_position.avgCostPrice < price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty < 0 && bitemex_position.avgCostPrice < price) || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -290,7 +290,7 @@ namespace bit.BitMex_ActionClass
             #endregion
             #region step5
             price = bitemex_Bucketeds[0].close <= iniinitial_value - step5_spring ? bitemex_Bucketeds[0].close - 1.5 : iniinitial_value - step5_spring;
-            if (bitemex_position.currentQty <= 0 || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price && bitemex_position.avgCostPrice > price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty > 0 && bitemex_position.avgCostPrice > price) || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -303,7 +303,7 @@ namespace bit.BitMex_ActionClass
                 list_bitmex_order.Add(_bitmex_order);
             }
             price = bitemex_Bucketeds[0].close >= iniinitial_value + step5_spring ? bitemex_Bucketeds[0].close + 1.5 : iniinitial_value + step5_spring;
-            if (bitemex_position.currentQty >= 0 || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price && bitemex_position.avgCostPrice < price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty < 0 && bitemex_position.avgCostPrice < price) || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -318,7 +318,7 @@ namespace bit.BitMex_ActionClass
             #endregion
             #region step6
             price = bitemex_Bucketeds[0].close <= iniinitial_value - step6_spring ? bitemex_Bucketeds[0].close - 1.5 : iniinitial_value - step6_spring;
-            if (bitemex_position.currentQty <= 0 || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price && bitemex_position.avgCostPrice > price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty > 0 && bitemex_position.avgCostPrice > price) || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -331,7 +331,7 @@ namespace bit.BitMex_ActionClass
                 list_bitmex_order.Add(_bitmex_order);
             }
             price = bitemex_Bucketeds[0].close >= iniinitial_value + step6_spring ? bitemex_Bucketeds[0].close + 1.5 : iniinitial_value + step6_spring;
-            if (bitemex_position.currentQty >= 0 || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price && bitemex_position.avgCostPrice < price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty < 0 && bitemex_position.avgCostPrice < price) || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -346,7 +346,7 @@ namespace bit.BitMex_ActionClass
             #endregion
             #region step7
             price = bitemex_Bucketeds[0].close <= iniinitial_value - step7_spring ? bitemex_Bucketeds[0].close - 1.5 : iniinitial_value - step7_spring;
-            if (bitemex_position.currentQty <= 0 || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price && bitemex_position.avgCostPrice > price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty > 0 && bitemex_position.avgCostPrice > price) || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -359,7 +359,7 @@ namespace bit.BitMex_ActionClass
                 list_bitmex_order.Add(_bitmex_order);
             }
             price = bitemex_Bucketeds[0].close >= iniinitial_value + step7_spring ? bitemex_Bucketeds[0].close + 1.5 : iniinitial_value + step7_spring;
-            if (bitemex_position.currentQty >= 0 || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price && bitemex_position.avgCostPrice < price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty < 0 && bitemex_position.avgCostPrice < price) || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -374,7 +374,7 @@ namespace bit.BitMex_ActionClass
             #endregion
             #region step8
             price = bitemex_Bucketeds[0].close <= iniinitial_value - step8_spring ? bitemex_Bucketeds[0].close - 1.5 : iniinitial_value - step8_spring;
-            if (bitemex_position.currentQty <= 0 || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price && bitemex_position.avgCostPrice > price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty > 0 && bitemex_position.avgCostPrice > price) || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -387,7 +387,7 @@ namespace bit.BitMex_ActionClass
                 list_bitmex_order.Add(_bitmex_order);
             }
             price = bitemex_Bucketeds[0].close >= iniinitial_value + step8_spring ? bitemex_Bucketeds[0].close + 1.5 : iniinitial_value + step8_spring;
-            if (bitemex_position.currentQty >= 0 || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price && bitemex_position.avgCostPrice < price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty < 0 && bitemex_position.avgCostPrice < price) || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -402,7 +402,7 @@ namespace bit.BitMex_ActionClass
             #endregion
             #region step9
             price = bitemex_Bucketeds[0].close <= iniinitial_value - step9_spring ? bitemex_Bucketeds[0].close - 1.5 : iniinitial_value - step9_spring;
-            if (bitemex_position.currentQty <= 0 || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price && bitemex_position.avgCostPrice > price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty > 0 && bitemex_position.avgCostPrice > price) || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";
@@ -415,7 +415,7 @@ namespace bit.BitMex_ActionClass
                 list_bitmex_order.Add(_bitmex_order);
             }
             price = bitemex_Bucketeds[0].close >= iniinitial_value + step9_spring ? bitemex_Bucketeds[0].close + 1.5 : iniinitial_value + step9_spring;
-            if (bitemex_position.currentQty >= 0 || (bitemex_position.currentQty < 0 && bitemex_position.marginCallPrice > price && bitemex_position.avgCostPrice < price))
+            if (bitemex_position.currentQty == 0 || (bitemex_position.currentQty < 0 && bitemex_position.avgCostPrice < price) || (bitemex_position.currentQty > 0 && bitemex_position.marginCallPrice < price))
             {
                 _bitmex_order = new bitmex_order();
                 _bitmex_order.symbol = "XBTUSD";

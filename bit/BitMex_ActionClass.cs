@@ -45,16 +45,16 @@ namespace bit.BitMex_ActionClass
             int step9_Qty; double step9_spring; double _margin9;
             int step10_Qty; double step10_spring; double _margin10;
 
-            step1_Qty = 25; step1_spring = 3.0; _margin1 = 15.0;
-            step2_Qty = 26; step2_spring = 8.0; _margin2 = 15.0;
-            step3_Qty = 27; step3_spring = 15.0; _margin3 = 23.0;
-            step4_Qty = 28; step4_spring = 30.0; _margin4 = 40.0;
-            step5_Qty = 29; step5_spring = 30.0; _margin5 = 40.0;
-            step6_Qty = 30; step6_spring = 55.0; _margin6 = 60.0;
-            step7_Qty = 31; step7_spring = 80.0; _margin7 = 100.0;
-            step8_Qty = 32; step8_spring = 140.0; _margin8 = 160.0;
-            step9_Qty = 33; step9_spring = 180.0; _margin9 = 210.0;
-            step10_Qty = 34; step10_spring = 250.0; _margin10 = 250.0;
+            step1_Qty = 1000; step1_spring = 3.0; _margin1 = 15.0;
+            step2_Qty = 2001; step2_spring = 8.0; _margin2 = 15.0;
+            step3_Qty = 2002; step3_spring = 15.0; _margin3 = 23.0;
+            step4_Qty = 2003; step4_spring = 30.0; _margin4 = 40.0;
+            step5_Qty = 2004; step5_spring = 30.0; _margin5 = 40.0;
+            step6_Qty = 2005; step6_spring = 55.0; _margin6 = 60.0;
+            step7_Qty = 2006; step7_spring = 80.0; _margin7 = 100.0;
+            step8_Qty = 2007; step8_spring = 140.0; _margin8 = 160.0;
+            step9_Qty = 2008; step9_spring = 180.0; _margin9 = 210.0;
+            step10_Qty = 2009; step10_spring = 250.0; _margin10 = 250.0;
 
             // hyunju3414764
             //step1_Qty = 500; step1_spring = 5.0; _margin1 = 15.0;

@@ -49,7 +49,7 @@ namespace bit.BitMex_ActionClass
             step2_Qty = 3000; step2_spring = 8.0; _margin2 = 15.0;
             step3_Qty = 3001; step3_spring = 15.0; _margin3 = 23.0;
             step4_Qty = 3002; step4_spring = 30.0; _margin4 = 40.0;
-            step5_Qty = 3003; step5_spring = 30.0; _margin5 = 40.0;
+            step5_Qty = 3003; step5_spring = 35.0; _margin5 = 40.0;
             step6_Qty = 3004; step6_spring = 55.0; _margin6 = 60.0;
             step7_Qty = 3005; step7_spring = 80.0; _margin7 = 100.0;
             step8_Qty = 3006; step8_spring = 140.0; _margin8 = 160.0;
@@ -99,25 +99,29 @@ namespace bit.BitMex_ActionClass
             }
             else if (Math.Abs(bitemex_position.currentQty) > 60000)
             {
-                modify_standard = 70;
+                modify_standard = 75;
             }
             else if (Math.Abs(bitemex_position.currentQty) > 50000)
             {
-                modify_standard = 50;
+                modify_standard = 70;
             }
             else if (Math.Abs(bitemex_position.currentQty) > 40000)
             {
-                modify_standard = 40;
+                modify_standard = 60;
             }
             else if (Math.Abs(bitemex_position.currentQty) > 30000)
             {
-                modify_standard = 30;
+                modify_standard = 50;
             }
             else if (Math.Abs(bitemex_position.currentQty) > 20000)
             {
-                modify_standard = 20;
+                modify_standard = 40;
             }
             else if (Math.Abs(bitemex_position.currentQty) > 10000)
+            {
+                modify_standard = 20;
+            }
+            else if (Math.Abs(bitemex_position.currentQty) > 5000)
             {
                 modify_standard = 15;
             }
@@ -311,94 +315,105 @@ namespace bit.BitMex_ActionClass
 
                 foreach (var item in recent_orders.Where(p => p.clOrdID == (pre_clOrdID) && p.cumQty > 0))
                 {
+                    price = Math.Ceiling(item.price * 2) / 2;
+
                     _bitmex_order = new bitmex_order();
                     string side = "";
                     if (item.side == "Buy")
                     {
+                        
                         side = "Sell";
-                        if (item.cumQty <= step1_Qty)
+                        if (item.cumQty == step1_Qty)
                         {
-                            price = item.price + _margin1;
+                            price = price + _margin1;
                         }
-                        else if (item.cumQty <= step2_Qty)
+                        else if (item.cumQty == step2_Qty)
                         {
-                            price = item.price + _margin2;
+                            price = price + _margin2;
                         }
-                        else if (item.cumQty <= step3_Qty)
+                        else if (item.cumQty == step3_Qty)
                         {
-                            price = item.price + _margin3;
+                            price = price + _margin3;
                         }
-                        else if (item.cumQty <= step4_Qty)
+                        else if (item.cumQty == step4_Qty)
                         {
-                            price = item.price + _margin4;
+                            price = price + _margin4;
                         }
-                        else if (item.cumQty <= step5_Qty)
+                        else if (item.cumQty == step5_Qty)
                         {
-                            price = item.price + _margin5;
+                            price = price + _margin5;
                         }
-                        else if (item.cumQty <= step6_Qty)
+                        else if (item.cumQty == step6_Qty)
                         {
-                            price = item.price + _margin6;
+                            price = price + _margin6;
                         }
-                        else if (item.cumQty <= step7_Qty)
+                        else if (item.cumQty == step7_Qty)
                         {
-                            price = item.price + _margin7;
+                            price = price + _margin7;
                         }
-                        else if (item.cumQty <= step8_Qty)
+                        else if (item.cumQty == step8_Qty)
                         {
-                            price = item.price + _margin8;
+                            price = price + _margin8;
                         }
-                        else if (item.cumQty <= step9_Qty)
+                        else if (item.cumQty == step9_Qty)
                         {
-                            price = item.price + _margin9;
+                            price = price + _margin9;
+                        }
+                        else if (item.cumQty == step10_Qty)
+                        {
+                            price = price + _margin10;
                         }
                         else
                         {
-                            price = item.price + _margin10;
+                            price = price + step3_Qty;
                         }
                     }
                     else
                     {
                         side = "Buy";
-                        if (item.cumQty <= step1_Qty)
+                        if (item.cumQty == step1_Qty)
                         {
-                            price = item.price - _margin1;
+                            price = price - _margin1;
                         }
-                        else if (item.cumQty <= step2_Qty)
+                        else if (item.cumQty == step2_Qty)
                         {
-                            price = item.price - _margin2;
+                            price = price - _margin2;
                         }
-                        else if (item.cumQty <= step3_Qty)
+                        else if (item.cumQty == step3_Qty)
                         {
-                            price = item.price - _margin3;
+                            price = price - _margin3;
                         }
-                        else if (item.cumQty <= step4_Qty)
+                        else if (item.cumQty == step4_Qty)
                         {
-                            price = item.price - _margin4;
+                            price = price - _margin4;
                         }
-                        else if (item.cumQty <= step5_Qty)
+                        else if (item.cumQty == step5_Qty)
                         {
-                            price = item.price - _margin5;
+                            price = price - _margin5;
                         }
-                        else if (item.cumQty <= step6_Qty)
+                        else if (item.cumQty == step6_Qty)
                         {
-                            price = item.price - _margin6;
+                            price = price - _margin6;
                         }
-                        else if (item.cumQty <= step7_Qty)
+                        else if (item.cumQty == step7_Qty)
                         {
-                            price = item.price - _margin7;
+                            price = price - _margin7;
                         }
-                        else if (item.cumQty <= step8_Qty)
+                        else if (item.cumQty == step8_Qty)
                         {
-                            price = item.price - _margin9;
+                            price = price - _margin9;
                         }
-                        else if (item.cumQty <= step9_Qty)
+                        else if (item.cumQty == step9_Qty)
                         {
-                            price = item.price - _margin9;
+                            price = price - _margin9;
+                        }
+                        else if (item.cumQty == step10_Qty)
+                        {
+                            price = price - _margin10;
                         }
                         else
                         {
-                            price = item.price - _margin10;
+                            price = price - _margin3;
                         }
 
                     }

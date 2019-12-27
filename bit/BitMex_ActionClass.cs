@@ -12,8 +12,8 @@ namespace bit.BitMex_ActionClass
     public class BitMex_ActionClass
     {
         // jejuairfarm
-        private static string bitmexKey = "I1mAR6Kn0HxzW6uRZS4pSFwq";
-        private static string bitmexSecret = "Fmv_Kvyq663upBdsyOwvlt7Mmo1KlvbH7sG5HlV2s9Gv8AMk";
+        private static string bitmexKey = "1jLqib5tAmDF29DBb8M9292R";
+        private static string bitmexSecret = "aI2c215XvsqSa-XkAyP83CmJnPM07Cuw-ysbRYG7pn8BFEHi";
 
 
         BitMEXApi bitemex = new BitMEXApi(bitmexKey, bitmexSecret);
@@ -45,16 +45,61 @@ namespace bit.BitMex_ActionClass
             int step9_Qty; double step9_spring; double _margin9;
             int step10_Qty; double step10_spring; double _margin10;
 
-            step1_Qty = 1000; step1_spring = 3.0; _margin1 = 15.0;
-            step2_Qty = 3000; step2_spring = 8.0; _margin2 = 15.0;
-            step3_Qty = 3001; step3_spring = 15.0; _margin3 = 23.0;
-            step4_Qty = 3002; step4_spring = 30.0; _margin4 = 40.0;
-            step5_Qty = 3003; step5_spring = 35.0; _margin5 = 40.0;
-            step6_Qty = 3004; step6_spring = 55.0; _margin6 = 60.0;
-            step7_Qty = 3005; step7_spring = 80.0; _margin7 = 100.0;
-            step8_Qty = 3006; step8_spring = 140.0; _margin8 = 160.0;
-            step9_Qty = 3007; step9_spring = 180.0; _margin9 = 210.0;
-            step10_Qty = 3008; step10_spring = 250.0; _margin10 = 250.0;
+            //step1_Qty = 5000; step1_spring = 3.0; _margin1 = 15.0;
+            //step2_Qty = 15000; step2_spring = 8.0; _margin2 = 22.0;
+            //step3_Qty = 22000; step3_spring = 15.0; _margin3 = 25.0;
+            //step4_Qty = 22002; step4_spring = 30.0; _margin4 = 40.0;
+            //step5_Qty = 22004; step5_spring = 35.0; _margin5 = 40.0;
+            //step6_Qty = 22006; step6_spring = 55.0; _margin6 = 60.0;
+            //step7_Qty = 22008; step7_spring = 80.0; _margin7 = 100.0;
+            //step8_Qty = 22010; step8_spring = 140.0; _margin8 = 160.0;
+            //step9_Qty = 22012; step9_spring = 180.0; _margin9 = 210.0;
+            //step10_Qty = 22014; step10_spring = 250.0; _margin10 = 250.0;
+
+            //step1_Qty = 1000; step1_spring = 3.0; _margin1 = 15.0;
+            //step2_Qty = 5000; step2_spring = 8.0; _margin2 = 22.0;
+            //step3_Qty = 6001; step3_spring = 15.0; _margin3 = 25.0;
+            //step4_Qty = 8002; step4_spring = 30.0; _margin4 = 40.0;
+            //step5_Qty = 8004; step5_spring = 35.0; _margin5 = 40.0;
+            //step6_Qty = 8006; step6_spring = 55.0; _margin6 = 60.0;
+            //step7_Qty = 8008; step7_spring = 80.0; _margin7 = 100.0;
+            //step8_Qty = 8010; step8_spring = 140.0; _margin8 = 160.0;
+            //step9_Qty = 8012; step9_spring = 180.0; _margin9 = 210.0;
+            //step10_Qty = 8014; step10_spring = 250.0; _margin10 = 250.0;
+
+            step1_Qty = 30; step1_spring = 3.0; _margin1 = 15.0;
+            step2_Qty = 31; step2_spring = 8.0; _margin2 = 22.0;
+            step3_Qty = 32; step3_spring = 15.0; _margin3 = 25.0;
+            step4_Qty = 33; step4_spring = 30.0; _margin4 = 40.0;
+            step5_Qty = 34; step5_spring = 35.0; _margin5 = 40.0;
+            step6_Qty = 35; step6_spring = 55.0; _margin6 = 60.0;
+            step7_Qty = 36; step7_spring = 80.0; _margin7 = 100.0;
+            step8_Qty = 37; step8_spring = 140.0; _margin8 = 160.0;
+            step9_Qty = 38; step9_spring = 180.0; _margin9 = 210.0;
+            step10_Qty = 39; step10_spring = 250.0; _margin10 = 250.0;
+
+            //엄청 손해본거...ㅠ
+            //step1_Qty = 1000; step1_spring = 3.0; _margin1 = 15.0;
+            //step2_Qty = 8000; step2_spring = 8.0; _margin2 = 22.0;
+            //step3_Qty = 8001; step3_spring = 15.0; _margin3 = 25.0;
+            //step4_Qty = 12001; step4_spring = 30.0; _margin4 = 40.0;
+            //step5_Qty = 12002; step5_spring = 35.0; _margin5 = 40.0;
+            //step6_Qty = 12003; step6_spring = 55.0; _margin6 = 60.0;
+            //step7_Qty = 12004; step7_spring = 80.0; _margin7 = 100.0;
+            //step8_Qty = 12005; step8_spring = 140.0; _margin8 = 160.0;
+            //step9_Qty = 12006; step9_spring = 180.0; _margin9 = 210.0;
+            //step10_Qty = 12007; step10_spring = 250.0; _margin10 = 250.0;
+
+            //step1_Qty = 1000; step1_spring = 3.0; _margin1 = 15.0;
+            //step2_Qty = 3000; step2_spring = 8.0; _margin2 = 15.0;
+            //step3_Qty = 6001; step3_spring = 15.0; _margin3 = 23.0;
+            //step4_Qty = 6002; step4_spring = 30.0; _margin4 = 40.0;
+            //step5_Qty = 3003; step5_spring = 35.0; _margin5 = 40.0;
+            //step6_Qty = 3004; step6_spring = 55.0; _margin6 = 60.0;
+            //step7_Qty = 3005; step7_spring = 80.0; _margin7 = 100.0;
+            //step8_Qty = 3006; step8_spring = 140.0; _margin8 = 160.0;
+            //step9_Qty = 3007; step9_spring = 180.0; _margin9 = 210.0;
+            //step10_Qty = 3008; step10_spring = 250.0; _margin10 = 250.0;
 
             // hyunju3414764
             //step1_Qty = 500; step1_spring = 5.0; _margin1 = 15.0;
@@ -67,6 +112,7 @@ namespace bit.BitMex_ActionClass
             //step8_Qty = 50; step8_spring = 180.0; _margin8 = 210.0;
             //step9_Qty = 50; step9_spring = 250.0; _margin9 = 250.0;
             #endregion
+            #region standard_avgCostPrice
             double standard_avgCostPrice = (double)bitemex_position.avgCostPrice;
             double modify_standard = 0;
             if (Math.Abs(bitemex_position.currentQty) > 200000)
@@ -136,7 +182,8 @@ namespace bit.BitMex_ActionClass
             else
             {
                 standard_avgCostPrice = standard_avgCostPrice + modify_standard;
-            }
+            } 
+            #endregion
 
 
 

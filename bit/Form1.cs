@@ -20,8 +20,8 @@ namespace bit
     {
 
         // jejuairfarm
-        private static string bitmexKey = "I1mAR6Kn0HxzW6uRZS4pSFwq";
-        private static string bitmexSecret = "Fmv_Kvyq663upBdsyOwvlt7Mmo1KlvbH7sG5HlV2s9Gv8AMk";
+        private static string bitmexKey = "1jLqib5tAmDF29DBb8M9292R";
+        private static string bitmexSecret = "aI2c215XvsqSa-XkAyP83CmJnPM07Cuw-ysbRYG7pn8BFEHi";
 
         // [2]
         BitMEXApi bitemex = new BitMEXApi(bitmexKey, bitmexSecret);
@@ -55,17 +55,10 @@ namespace bit
         user_margin _user_margin = new user_margin();
         private void Auto_Trad_Play()
         {
-            //[1] 
-            if (second < 0 || second % 300 < timeloop)
-            {
-                //[1-1]   5분에 한번 update
-                _user_margin = JsonConvert.DeserializeObject<user_margin>(bitemex.GetUserMargin());
-            }
-
-            //[2]
+            //[1]
             if (second < 0 || second > 48)  //53초 이후부터는 timeloop초에 한번 주문 
             {
-                //[2-1] 56초 이후 1회 실행
+                //[2-1] 48초 이후 1회 실행
                 if (readPosition == false)
                 {
                     //[1] Positions
